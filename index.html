@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row text-bg-dark p-4">
+        <h1 class="col text-center">Weather Dashboard</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <h2 class="row p-2 fw-bold">Search for a City</h2>
+          <div>
+            <div class="pb-3"><input id='Search' class="col-form-label" /></div>
+            <button id='SearchButton' class="btn btn-primary">Submit</button>
+          </div>
+          <hr>
+          <div class="row ps-3">
+            <ul id='SearchHistory' class="list-group"></ul>
+          </div>
+        </div>
+        <div class="col pt-3">
+          <div class="row border border-black">
+            <h2 id='CurrCity'class="row ps-3 pt-1 fw-bold">Loading...</h2>
+            <div id="WeatherIcon"></div>
+            <div id='CurrTemp' class="row ps-3 pb-2">Temp: </div>
+            <div id='CurrWind' class="row ps-3 pb-2">Wind: </div>
+            <div id='CurrHumidity' class="row ps-3 pb-2">Humidity: </div>
+          </div>
+          <div class="row">
+            <h3 class="row fw-bold pt-2">5-Day Forecast:</h3>
+            <div class="row">
+              <div class="col border border-black me-4">
+                <h4 id='Day0' class='fw-bold'>Loading...</h4>
+                <div id='Icon0' class="pb-2"></div>
+                <div id='Temp0' class="pb-2">Temp:</div>
+                <div id='Wind0' class="pb-2">Wind:</div>
+                <div id='Humidity0' class="pb-2">Humidity:</div>
+              </div>
+              <div class="col border border-black me-4">
+                <h4 id='Day1' class='fw-bold'>Loading...</h4>
+                <div id='Icon1' class="pb-2"></div>
+                <div id='Temp1' class="pb-2">Temp:</div>
+                <div id='Wind1' class="pb-2">Wind:</div>
+                <div id='Humidity1' class="pb-2">Humidity:</div>
+              </div>
+              <div class="col border border-black me-4">
+                <h4 id='Day2' class='fw-bold'>Loading...</h4>
+                <div id='Icon2' class="pb-2"></div>
+                <div id='Temp2' class="pb-2">Temp:</div>
+                <div id='Wind2' class="pb-2">Wind:</div>
+                <div id='Humidity2' class="pb-2">Humidity:</div>
+              </div>
+              <div class="col border border-black me-4">
+                <h4 id='Day3' class='fw-bold'>Loading...</h4>
+                <div id='Icon3' class="pb-2"></div>
+                <div id='Temp3' class="pb-2">Temp:</div>
+                <div id='Wind3' class="pb-2">Wind:</div>
+                <div id='Humidity3' class="pb-2">Humidity:</div>
+              </div>
+              <div class="col border border-black">
+                <h4 id='Day4' class='fw-bold'>Loading...</h4>
+                <div id='Icon4' class="pb-2"></div>
+                <div id='Temp4' class="pb-2">Temp:</div>
+                <div id='Wind4' class="pb-2">Wind:</div>
+                <div id='Humidity4' class="pb-2">Humidity:</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>

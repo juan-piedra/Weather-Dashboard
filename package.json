@@ -1,0 +1,23 @@
+{
+  "name": "weather-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juan-piedra/Weather-Dashboard.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/juan-piedra/Weather-Dashboard/issues"
+  },
+  "homepage": "https://github.com/juan-piedra/Weather-Dashboard#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
+}
