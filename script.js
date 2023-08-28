@@ -13,7 +13,7 @@ document.getElementById('SearchButton').addEventListener('click', function() {
 
 
 const geoCode = (searchValue) => {
-    fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=5&appid=${APIKey}`)
+    fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${searchValue}&limit=5&appid=${APIKey}`)
     .then(res => res.json())
     .then(data => {
         console.log(data)
